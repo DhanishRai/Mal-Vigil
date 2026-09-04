@@ -87,3 +87,4 @@ Mal-Vigil/
 ├── watcher.py               # Background filesystem listener & toast alert engine
 └── models/
     └── malware_lgbm.txt     # Serialized, lightweight LightGBM decision tree weights
+    
