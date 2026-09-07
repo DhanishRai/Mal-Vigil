@@ -1,0 +1,12 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Quarantined test files
+*.isolated
+
+# PyInstaller builds
+build/
+dist/
+*.
