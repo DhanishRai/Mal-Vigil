@@ -37,3 +37,35 @@ Risk under 50%   Risk 50% or higher
 │               └── 2. Pops up desktop notification
 ▼               ▼
 Ready to use    File safely locked
+---
+
+## Key Features
+
+* **Runs Automatically:** You do not need to open the app or scan files manually. It watches the folder 24/7.
+* **Checks Without Running:** It scans files safely from the outside so no harmful code can execute during the check.
+* **Safe Quarantine:** It doesn't delete your files. It only renames them to `.isolated`. If it's a file you trust, you can easily restore it.
+* **Very Low RAM Usage:** Uses only about 25 MB of RAM, so it will never slow down your computer.
+* **Runs 100% Locally:** None of your files or data are uploaded to the internet or any cloud server.
+
+---
+
+## Tech Stack
+
+* **Language:** Python 3
+* **Folder Monitoring:** `watchdog`
+* **File Inspection:** `pefile`
+* **Machine Learning:** `lightgbm`, `scikit-learn`, `numpy`
+* **Desktop Alerts:** `notify-send` (Ubuntu desktop notifications)
+
+---
+
+## Folder Structure
+
+```text
+Mal-Vigil/
+├── requirements.txt      # List of required Python packages
+├── extractor.py          # Safely reads file patterns and features
+├── train_model.py        # Trains the machine learning model
+├── watcher.py            # Main background program that guards your folder
+└── models/
+    └── malware_lgbm.txt  # Saved trained model weights
