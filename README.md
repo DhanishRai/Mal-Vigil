@@ -17,3 +17,23 @@ When you download files from the internet, you might accidentally double-click a
 ---
 
 ## How It Works (Simple Diagram)
+File downloaded into ~/Downloads
+│
+▼
+Mal-Vigil detects the file
+│
+▼
+Inspects code patterns safely (Entropy, APIs, Headers)
+│
+▼
+Machine Learning Model calculates Risk Score
+│
+┌───────┴───────┐
+▼               ▼
+Risk under 50%   Risk 50% or higher
+[File is safe]   [Threat detected!]
+│               │
+│               ├── 1. Renames file to .isolated
+│               └── 2. Pops up desktop notification
+▼               ▼
+Ready to use    File safely locked
