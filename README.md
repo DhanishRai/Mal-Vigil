@@ -69,3 +69,33 @@ Mal-Vigil/
 ├── watcher.py            # Main background program that guards your folder
 └── models/
     └── malware_lgbm.txt  # Saved trained model weights
+
+    How to Install & Run
+
+
+ 1. Install System Requirements (Ubuntu / Linux)
+
+    sudo apt update
+     
+    sudo apt install python3-pip python3-venv python-is-python3 libnotify-bin -y
+ 2. Download the Project
+
+    git clone [https://github.com/DhanishRai/Mal-Vigil.git](https://github.com/DhanishRai/Mal-Vigil.git)
+    cd Mal-Vigil
+
+3. Set Up Python Virtual Environment
+    
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt  
+
+4. Train the Model (First Time Only)
+
+    python train_model.py
+
+5. Start the Guardian
+
+   python watcher.py
+
+   
+
